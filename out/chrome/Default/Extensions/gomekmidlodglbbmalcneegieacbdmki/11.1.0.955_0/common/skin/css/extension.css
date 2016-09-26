@@ -1,0 +1,1355 @@
+
+.avast_os_ext_rightContent,
+.avast_os_ext_rightContent *,
+.avast_os_ext_rightContent *:after,
+.avast_os_ext_rightContent *:before,
+.avast-extension-topbar,
+.avast-extension-topbar *,
+.avast-extension-topbar *:after,
+.avast-extension-topbar *:before {
+  -webkit-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+}
+
+
+.avast_os_ext_tooltip {
+  z-index: 2147483647 !important;
+  position: fixed !important;
+  font-family: myriad-pro,sans-serif !important;
+  text-align: left !important;
+  color: black !important;
+  text-transform: none !important;
+  font-size: 14px !important;
+  padding: 8px !important;
+}
+
+.avast_os_ext_float_on_top {
+  z-index: 2147483647 !important;
+  position: absolute !important;
+  font-family: myriad-pro,sans-serif !important;
+  text-align: left !important;
+  color: black !important;
+  text-transform: none !important;
+  font-size: 14px !important;
+  border-radius: 5px !important;
+  box-shadow: 5px 5px 5px grey !important;
+  background: lightgrey !important;
+  border: 2px solid grey !important;
+}
+
+.avast-extension-topbar {
+  z-index: 2147483647 !important;
+  height: 40px !important;
+  top: 0px !important;
+  position: fixed !important;
+  width: 100% !important;
+  transition: all 2.35s linear !important;
+}
+
+.avast-extension-topbar .avast-extension-topbar-icon {
+  float: left !important;
+  width: 40px !important;
+  height: 40px !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  border-right: solid 1px rgba(255,255,255,.4) !important;
+}
+
+.avast-extension-topbar .avast-extension-topbar-text {
+  float: left !important;
+  color: #fff !important;
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-size: 21px !important;
+  line-height: 40px !important;
+  height: 40px !important;
+  padding: 0 10px !important;
+}
+
+.avast-extension-topbar .avast-extension-topbar-desc {
+  float: left !important;
+  color: #fff !important;
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-weight: lighter !important;
+  font-size: 22px !important;
+  line-height: 50px !important;
+  height: 50px !important;
+}
+
+.avast-extension-topbar .avast-extension-topbar-button {
+  float: right !important;
+  width: 128px !important;
+  height: 30px !important;
+  border-radius: 5px !important; /* border radius */
+  background-clip: padding-box !important; /* prevents bg color from leaking outside the border */
+  background-color: #fff !important; /* layer fill content */
+  box-shadow: 0 1px 0 rgba(90,96,101,.2) !important; /* drop shadow */
+  margin-top: 5px !important;
+  cursor: pointer !important;
+}
+
+.avast-extension-topbar .avast-extension-topbar-button .avast-extension-topbar-button-text {
+  border-radius: 5px !important;
+  background-clip: padding-box !important;
+  background-color: #fff !important;
+  box-shadow: 0 1px 0 rgba(90,96,101,.2) !important;
+  font-family: "Lato", sans-serif !important;
+  font-weight: bold !important;
+  font-size: 12px !important;
+  text-align: center !important;
+  line-height: 30px !important;
+  color: #595f65 !important;
+}
+
+.avast-extension-topbar .avast-extension-topbar-decline-button {
+  float: right !important;
+  height: 30px !important;
+  border-radius: 5px !important; /* border radius */
+  background-clip: padding-box !important; /* prevents bg color from leaking outside the border */
+  background-color: #fff !important; /* layer fill content */
+  box-shadow: 0 1px 0 rgba(90,96,101,.2) !important; /* drop shadow */
+  margin-top: 5px !important;
+  margin-right: 10px !important;
+  padding: 0px 10px !important;
+  cursor: pointer !important;
+}
+
+.avast-extension-topbar .avast-extension-topbar-decline-button .avast-extension-topbar-button-text {
+  border-radius: 5px !important;
+  background-clip: padding-box !important;
+  background-color: #fff !important;
+  box-shadow: 0 1px 0 rgba(90,96,101,.2) !important;
+  font-family: "Lato", sans-serif !important;
+  font-weight: bold !important;
+  font-size: 12px !important;
+  text-align: center !important;
+  line-height: 30px !important;
+  color: #595f65 !important;
+}
+
+.avast-extension-topbar .avast-extension-topbar-decline-button .avast-extension-topbar-button-text em {
+  font-weight: bold !important;
+}
+
+.avast-extension-topbar .avast-extension-topbar-close {
+  float: right !important;
+  font-weight: bolder !important;
+  color: #fff !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  height: 40px !important;
+  width: 45px !important;
+  cursor: pointer !important;
+}
+
+#avast_os_ext_popup_close {
+  position: absolute !important;
+  top: 7px !important;
+  right: 25px !important;
+  width: 20px !important;
+  height: 20px !important;
+  cursor: pointer !important;
+  z-index: 2147483638;
+}
+
+#avast_os_ext_rightContent {
+  position: fixed !important;
+  width: 300px !important;
+  height: 100% !important;
+  right: -420px;
+  top: 0 !important;
+  color: #000 !important;
+  /*box-shadow: 0 0 30px 0px #000 !important; */
+  z-index: 2147483647;
+  font-family: myriad-pro,sans-serif !important;
+  text-align: left !important;
+  line-height: 1.2 !important;
+  user-select: none !important;
+  -khtml-user-select: none !important;
+  -o-user-select: none !important;
+  -moz-user-select: -moz-none !important;
+  -webkit-user-select: none !important;
+
+  -webkit-transition: all 0.35s linear;
+  -moz-transition: all 0.35s linear;
+  -o-transition: all 0.35s linear;
+  transition: all 0.35s linear;
+
+
+}
+
+/* RESET */
+#avast_os_ext_rightContent * {
+  color: black;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-weight: normal;
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+}
+
+#avast_os_ext_topContent {
+  position: fixed !important;
+  padding: 5px !important;
+  background-color: white !important;
+  width: 100% !important;
+  height: 71px !important;
+  top: -90px !important;
+  left: 0 !important;
+  color: #000 !important;
+  box-shadow: 0 0 5px 1px #000 !important;
+  z-index: 2147483647 ;
+}
+
+#avast_os_ext_mask {
+  position: fixed !important;
+  background-color: black !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: -2147483647 ;
+  top: 0px !important;
+  left: 0px !important;
+}
+
+.avast_os_ext_alertBox
+{
+  display: none;
+  position: fixed;
+  background-color: #DDD;
+  border-radius: 5px;
+  width: 250px;
+  min-height: 60px;
+  right: 330px;
+  top: 100px;
+  z-index: 2147483647;
+  text-align: center;
+  padding: 20px 10px 20px 10px !important;
+  border: 2px solid #555;
+  box-shadow: 0 0 5px 5px #999;
+  color: #000;
+  font-size: 8pt;
+  font-weight: normal;
+  font-family: Helvetica;
+}
+
+#avast_os_ext_rightContent a {
+  background: none !important;
+  padding: 0 !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_line {
+  width: 100% !important;
+  height: 1px !important;
+  opacity: .56 !important;
+  background-color: #d9d9d9 !important;
+  clear: both !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_short_line {
+  width: 95% !important;
+  height: 1px !important;
+  opacity: .56 !important;
+  background-color: #d9d9d9 !important;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_no_padding {
+  padding: 0 !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_header {
+  position: absolute !important;
+  height: 230px !important;
+  width: 240px !important;
+  padding: 0 30px 0 30px !important;
+  top: 0px !important;
+  left: 0px !important;
+  overflow: hidden !important;
+  opacity: .98 !important;
+  border-left: 1px solid rgba(0, 0, 0, 0.2)!important;
+  box-sizing: content-box !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_close {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  width: 16px !important;
+  height: 16px !important;
+  cursor: pointer !important;
+  position: absolute;
+  right: 14px !important;
+  top: 14px !important;
+}
+
+.avast_os_ext_rightContent>.avast_os_ext_middle_wrapper>.avast_os_ext_middle>.avast_os_ext_close {
+  position: fixed;
+  right: 16px !important;
+  top: 240px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_header * {
+  color: white !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_header .avast_os_ext_header_icon {
+  width: 100% !important;
+  height: 100px !important;
+  background-position: center 75% !important;
+  background-repeat: no-repeat !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_header .avast_os_ext_header_text {
+  width: 100% !important;
+  height: 35px !important;
+  padding-top: 15px !important;
+  text-align: center !important;
+  color: #fff !important; /* text color */
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-size: 25px !important;
+  font-weight: lighter !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_header .avast_os_ext_header_message {
+  width: 100% !important;
+  height: 30px !important;
+  color: white !important;
+  text-align: center !important;
+  color: #fff !important; /* text color */
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-size: 13px !important;
+  font-weight: lighter !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_header .avast_os_ext_header_buttons {
+  width: 239px !important;
+  height: 30px !important;
+  color: white !important;
+  text-align: center !important;
+  background-color: #EEEEEE !important;
+  cursor: pointer !important;
+  border-radius: 5px !important;
+  background-clip: padding-box !important;
+  background-color: #fff !important;
+  box-shadow: 0 1px 0 rgba(90,96,101,.2) !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_header .avast_os_ext_header_buttons:hover {
+  border-radius: 10px;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_header .avast_os_ext_header_buttons .avast_os_ext_header_button_left {
+  width: 50%;
+  float: left;
+  height: 21px !important;
+  padding-top: 9px !important;
+  text-align: center !important;
+  color: #595f65 !important; /* text color */
+  font-family: "Lato", sans-serif !important;
+  font-size: 11px !important;
+  font-weight: bold !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_header .avast_os_ext_header_buttons .avast_os_ext_header_button_right {
+  width: 49%;
+  float: left;
+  height: 21px !important;
+  border-left: 1px solid #DDDDDD !important;
+  padding-top: 9px !important;
+  text-align: center !important;
+  color: #595f65 !important; /* text color */
+  font-family: "Lato", sans-serif !important;
+  font-size: 11px !important;
+  font-weight: bold !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_headline {
+  width: 100% !important;
+  padding: 35px 0 28px 0 !important;
+  text-align: center !important;
+  color: #272b31 !important; /* text color */
+  font-family: "Lato", sans-serif !important;
+  font-size: 16px !important;
+  padding-top: 35px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_headline .avast_os_ext_headline_message {
+  width: 100% !important;
+  text-align: center !important;
+  color: #595f65 !important; /* text color */
+  font-family: "Lato", sans-serif !important;
+  font-size: 15px !important;
+  padding-top: 10px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_dnt_arrow {
+  content: "";
+  position: absolute !important;
+  top: -7px !important;
+  width: 20px !important;
+  height: 20px !important;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  tranform: rotate(45deg);
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_dnt_group {
+  width: 240px !important;
+  height: 30px !important;
+  padding-left: 29px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_dnt_group .avast_os_ext_dnt_group_left {
+  float: left !important;
+  color: #656971 !important; /* text color */
+  font-family: "Lato", sans-serif !important;
+  font-size: 14px !important;
+  padding-top: 3px !important;
+  max-width: 200px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_dnt_group .avast_os_ext_dnt_group_right {
+  float: right;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle
+  .avast_os_ext_dnt_group .avast_os_ext_dnt_group_right
+    .avast_os_ext_dnt_group_right_wrapper {
+      width: 38px;
+      height: 20px;
+      float: right;
+      position: relative;
+      cursor: pointer;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle
+  .avast_os_ext_dnt_group .avast_os_ext_dnt_group_right
+    .avast_os_ext_dnt_group_right_wrapper .avast_os_ext_dnt_group_right_text {
+      width: 50% !important;
+      height: 20px !important;
+      float: left !important;
+      text-align: center !important;
+      color: white !important;
+      font-size: 12px !important;
+      padding: 3px 0 0 0 !important;
+      background-repeat: no-repeat !important;
+      background-position: center 40% !important;
+    }
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle
+  .avast_os_ext_dnt_group .avast_os_ext_dnt_group_right
+    .avast_os_ext_dnt_group_right_wrapper .avast_os_ext_dnt_group_switcher {
+      width: 22px;
+      height: 22px;
+      position: absolute;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_dnt_companies {
+  background-color: #f4f4f4 !important;
+  position: relative !important;
+  width: 275px !important;
+  padding: 15px 0 15px 0 !important;
+  margin: 10px 0 15px 5px !important;
+  display: none ;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_dnt_companies .avast_os_ext_dnt_company {
+  width: 230px !important;
+  height: 19px !important;
+  margin: 9px 0 9px 0 !important;
+  padding-left: 25px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_dnt_companies .avast_os_ext_dnt_company .avast_os_ext_dnt_company_name {
+  color: #656971 !important; /* text color */
+  font-family: "Lato", sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+  float: left !important;
+  max-width: 190px !important;
+  overflow: hidden !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_dnt_companies .avast_os_ext_dnt_company .avast_os_ext_dnt_company_icon {
+  float: right !important;
+  position: relative;
+  height: 14px !important;
+  width: 25px !important;
+  right: 0px !important;
+  border-radius: 25px !important;
+}
+
+.avast_os_ext_dnt_company_icon.avast_os_ext_red_bubble_switch {
+  background-color: #f7636f !important;
+  cursor: pointer !important;
+}
+
+.avast_os_ext_dnt_company_icon.avast_os_ext_green_bubble_switch {
+  background-color: #47cc82 !important;
+  cursor: pointer !important;
+}
+
+.avast_os_ext_dnt_company_icon.avast_os_ext_grey_bubble_switch {
+  background-color: #a5abb2 !important;
+  cursor: default !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_dnt_companies .avast_os_ext_dnt_company .avast_os_ext_dnt_company_icon .avast_os_ext_dnt_company_icon_switch {
+  width: 14px !important;
+  height: 14px !important;
+  background-color: white !important;
+  border-radius: 30px !important;
+  top: -1px !important;
+  position: absolute;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_dnt_companies .avast_os_ext_dnt_company
+  .avast_os_ext_dnt_company_icon.avast_os_ext_red_bubble_switch .avast_os_ext_dnt_company_icon_switch{
+  border: 1px #f7636f solid !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_dnt_companies .avast_os_ext_dnt_company
+  .avast_os_ext_dnt_company_icon.avast_os_ext_green_bubble_switch .avast_os_ext_dnt_company_icon_switch{
+  border: 1px #47cc82 solid !important;
+  right: 0px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_dnt_companies .avast_os_ext_dnt_company
+  .avast_os_ext_dnt_company_icon.avast_os_ext_grey_bubble_switch .avast_os_ext_dnt_company_icon_switch{
+  border: 1px #a5abb2 solid !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_details_group {
+  height: 46px !important;
+  margin: 0 auto !important;
+  width: 240px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_details_group .avast_os_ext_details_group_left {
+  float: left !important;
+  color: #595f65 !important; /* text color */
+  font-family: "Lato", sans-serif !important;
+  font-size: 14px !important;
+  padding-top: 10px !important;
+  width: 200px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_details_group .avast_os_ext_details_group_right {
+  float: right !important;
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 5px !important; /* border radius */
+  background-clip: padding-box !important; /* prevents bg color from leaking outside the border */
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_rating_group {
+  width: 220px;
+  height: 40px;
+  border-radius: 5px; /* border radius */
+  background-clip: padding-box; /* prevents bg color from leaking outside the border */
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.14); /* inner shadow */
+  margin: 0 0 10px 40px !important;
+
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_rating_group .avast_os_ext_rating_group_left {
+  float: left !important;
+  color: #595f65 !important; /* text color */
+  font-family: "Lato", sans-serif !important;
+  font-size: 15px !important;
+  position: absolute;
+  width: 44px !important;
+  height: 40px !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  border-radius: 5px 0 0 5px !important; /* border radius */
+  background-clip: padding-box !important; /* prevents bg color from leaking outside the border */
+  cursor: pointer !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_rating_group .avast_os_ext_rating_group_right {
+  height: 40px !important;
+  border-radius: 5px !important; /* border radius */
+  background-clip: padding-box !important; /* prevents bg color from leaking outside the border */
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  position: relative !important;
+  text-align: center !important;
+  width: 100% !important;
+  line-height: 40px !important;
+  color: #fff !important;
+  font-family: "Lato", sans-serif !important;
+  font-size: 13px !important;
+  cursor: pointer;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_rating_extra_group {
+   height: 35px !important;
+   margin-left: 13px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_rating_extra_group .avast_os_ext_rating_extra_group_left {
+  float: left !important;
+  width: 18px !important;
+  height: 18px !important;
+  border: 1px solid #c9cbcf !important; /* stroke */
+  border-radius: 3px !important; /* border radius */
+  background-clip: padding-box !important; /* prevents bg color from leaking outside the border */
+  background-color: #dddfe1 !important; /* layer fill content */
+  margin-right: 15px !important;
+  cursor: pointer;
+}
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_rating_extra_group .rating_checked {
+  background-color: #414b55 !important;
+  border: 1px solid #414b55 !important;
+}
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_rating_extra_group .rating_checked:after {
+  content: '\00D7';
+  font-size: 14px !important;
+  padding-left: 5px !important;
+  font-weight: bold !important;
+  color: #fff !important;
+}
+
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_rating_extra_group .avast_os_ext_rating_extra_group_right {
+  float: left !important;
+  color: #656971 !important; /* text color */
+  font-family: "Lato", sans-serif !important;
+  font-size: 15px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_middle_icon {
+  width: 100% !important;
+  height: 110px !important;
+  background-position: center bottom  !important;
+  background-repeat: no-repeat !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_item_footer {
+  color: #373b41 !important;
+  font-family: "Lato", sans-serif !important;
+  font-size: 14px !important;
+  width: 100% !important;
+  height: 20px !important;
+  margin-top: 20px !important;
+  padding-top: 20px !important;
+  text-align: center !important;
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_item_button {
+  color: #fff !important; /* text color */
+  font-family: "Lato", sans-serif !important;
+  font-size: 13px !important;
+  width: 220px !important;
+  height: 40px !important;
+  border-radius: 5px !important; /* border radius */
+  background-clip: padding-box !important; /* prevents bg color from leaking outside the border */
+  background-color: #0abef2 !important; /* layer fill content */
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.14) !important; /* inner shadow */
+  text-align: center !important;
+  line-height: 40px !important;
+  margin-left: 13px !important;
+  cursor: pointer;
+  margin-top: 13px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper {
+  height: auto !important;
+  top: 230px !important;
+  bottom: 30px !important;
+  width: 100% !important;
+  /*background-color: #f5f5f5 !important;*/
+  /*opacity: 0.92 !important;*/
+  position: absolute !important;
+  z-index: -2 !important;
+  border-left: 1px solid rgba(0, 0, 0, 0.2) !important;
+  background-repeat: no-repeat !important;
+  background-position: center 95% !important;
+  background-color: rgba(245,245,245,0.92) !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_header .avast_os_ext_top {
+  /*background-color: #ecf0f2 !important;*/
+  position:absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  border-bottom: 1px solid grey !important;
+  width: 100% !important;
+  height: 70px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_header .avast_os_ext_top_side {
+  width: 20% !important;
+  float: left;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_header .avast_os_ext_top_info {
+  position:absolute !important;
+  top: 70px !important;
+  left: 0 !important;
+  width: 100% !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_header .avast_os_ext_top_info .avast_os_ext_no_data{
+  width: 100px !important;
+  padding: 35px 100px 0 120px !important;
+  font-size: 20px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_header .avast_os_ext_top_info .avast_os_ext_rating_box
+{
+  height: 82px !important;
+  border-top: 1px solid rgba(217, 217, 217, 0.33) !important;
+  border-right: 1px solid rgba(217, 217, 217, 0.33) !important;
+  float:left !important;
+  width: 49% !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_header .avast_os_ext_top_info .avast_os_ext_rating_box .avast_os_ext_rating_icon
+{
+  width: 20px !important;
+  height: 20px !important;
+  top: 22px !important;
+  position: relative !important;
+  left: 30px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_header .avast_os_ext_top_info .avast_os_ext_rating_box .avast_os_ext_rating_name
+{
+  padding: 8px 0px 0px 20px !important;
+  color: #3d464f !important;
+  opacity: .7 !important;
+  font-size: 13px !important;
+  font-family: "Lato", sans-serif !important;
+  font-weight: bold !important;
+  text-align: center !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_header .avast_os_ext_top_info .avast_os_ext_rating_box .avast_os_ext_rating_description
+{
+  padding: 2px 20px 5px 55px !important;
+  color: #fff !important;
+  font-family: "FreightSans Pro", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  text-align: center !important;
+}
+
+.avast_os_ext_rightContent>.avast_os_ext_middle_wrapper>.avast_os_ext_middle {
+  background-color: #fff !important;
+  position:absolute !important;
+  top:0px !important;
+  left:0px !important;
+  width: 100% !important;
+  padding: 0 0 10% 0 !important;
+  border-bottom: 1px solid #dfdfdf !important;
+  border-left: 1px solid rgba(0, 0, 0, 0.3)!important;
+  box-sizing: border-box !important;
+  overflow: auto !important;
+  max-height: 100% !important;
+  opacity: 1 !important;
+}
+
+.avast_os_ext_rightContent p{
+  margin: 1em 0px !important;
+  clear: none !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_feature_top
+{
+  width: 100% !important;
+  height: 40px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_feature_box
+{
+  height: 60px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_feature_box .avast_os_ext_feature_button
+{
+  color: #fff !important;
+  font-family: "FreightSans Pro", sans-serif !important;
+  font-weight: bold !important;
+  font-size: 12px !important;
+  width: 106px !important;
+  float: left !important;
+  padding: 15px 0px 0px 0px !important;
+  height: 45px !important;
+  background-repeat:no-repeat !important;
+  background-position:50% 50% !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_feature_box .avast_os_ext_feature_button .avast_os_ext_feature_button_text{
+  text-align: right !important;
+  padding: 8px 5px 10px 0 !important;
+  cursor: hand; cursor: pointer;
+  color: #fff !important;
+  font-family: "FreightSans Pro", sans-serif !important;
+  font-weight: bold !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_feature_box .avast_os_ext_feature_button .avast_os_ext_feature_button_icon{
+  text-align: right !important;
+  padding: 8px 0 10px 2px !important;
+  width: 10px !important;
+  float: left !important;
+  cursor: hand; cursor: pointer;
+  color: #fff !important;
+  font-family: "FreightSans Pro", sans-serif !important;
+  font-weight: bold !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_feature_box .avast_os_ext_feature_content
+{
+  float: left !important;
+  width: 190px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_feature_box .avast_os_ext_feature_content .avast_os_ext_feature_name
+{
+  height: 18px !important;
+  padding: 10px 0px 5px 16px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  opacity: .9 !important;
+  color: #2f3943 !important;
+  font-family: "Open Sans",sans-serif !important;
+  font-size: 13px !important;
+  font-weight: bold !important;
+  text-overflow: ellipsis !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_feature_box .avast_os_ext_feature_content .avast_os_ext_feature_description
+{
+  padding: 0px 0px 5px 16px !important;
+  color: #6e777d !important;
+  font-family: "Open Sans",sans-serif !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_feature_box .avast_os_ext_feature_provider
+{
+  position: absolute !important;
+  bottom:8px !important;
+  right:0 !important;
+  padding: 2px !important;
+  color: #999 !important;
+  font-size: 12px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_middle_wrapper .avast_os_ext_middle .avast_os_ext_feature_box .avast_os_ext_feature_state
+{
+  position: absolute !important;
+  top:0px !important;
+  right:0 !important;
+  padding: 2px !important;
+  color: #999 !important;
+  font-size: 12px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_bottom {
+  background-color: #f5f5f5 !important;
+  position:absolute !important;
+  bottom: 0px !important;
+  left: 0 !important;
+  height: 30px !important;
+  border-top: 1px solid #dfdfdf !important;
+  width: 100% !important;
+  border-left: 1px solid rgba(0, 0, 0, 0.2)!important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_bottom .avast_os_ext_footer {
+  width: 100% !important;
+  height: 30px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_bottom .avast_os_ext_footer .avast_os_ext_middle {
+  float: left !important;
+  width: 40% !important;
+  height: 30px !important;
+  font-size: 12px !important;
+}
+
+.avast_os_ext_rightContent .avast_os_ext_bottom .avast_os_ext_footer .avast_os_ext_full {
+  float: right !important;
+  width: 100% !important;
+  height: 30px !important;
+  text-align: center !important;
+  padding-top: 10px !important;
+  font-family: "Lato", sans-serif !important;;
+  font-size: 11px !important;
+  color: #7d7d7d !important;
+  cursor: pointer !important;
+}
+.avast_os_ext_rightContent .avast_os_ext_bottom .avast_os_ext_logo {
+  width: 300px !important;
+  height: 36px !important;
+  position: absolute !important;
+  top: -70px !important;
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
+  z-index: -1 !important;
+}
+
+.avast_os_ext_sub_title {
+  padding: 0px 10px 0 20px !important;
+  text-align: left !important;
+  font-weight: bold !important;
+  font-family: "Lato", sans-serif !important;
+  font-size: 13px !important;
+  color: #2f3943 !important;
+  float: left !important;
+  width: 180px !important;
+}
+
+.avast_os_ext_sub_title_icon {
+  padding: 11px 10px 0 0px !important;
+  float: right !important;
+  width: 20px !important;
+}
+
+.avast_os_ext_title {
+  font-size: 20px !important;
+  text-align: center !important;
+  color: #2f3943 !important;
+  font-family: "FreightSans Pro", sans-serif !important;
+  width: 180px !important;
+  float: left !important;
+}
+
+.avast_os_ext_title_icon {
+  float: left !important;
+  padding: 19px 20px 0 20px !important;
+}
+
+.avast_os_ext_link {
+    cursor: hand;
+    cursor: pointer;
+}
+
+.avast_os_ext_img_center {
+  display: block !important;
+  margin: auto !important;
+}
+
+
+/* ----- tooltip ---- */
+.ui-tooltip, .avast_os_ext_arrow:after {
+    background: white  !important;
+    border: 2px solid #AAA !important;
+}
+.ui-tooltip {
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+    box-shadow: 0 0 7px black !important;
+}
+.avast_os_ext_arrow {
+    width: 70px !important;
+    height: 16px !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    left: 49% !important;
+    bottom: -16px !important;
+}
+.avast_os_ext_arrow.avast_os_ext_top {
+    top: -16px !important;
+    bottom: auto !important;
+}
+.avast_os_ext_arrow.avast_os_ext_left {
+    left: 3px !important;
+}
+.avast_os_ext_arrow:after {
+    content: "";
+    position: absolute !important;
+    /*left: 10px !important;*/
+    top: -10px !important;
+    width: 10px !important;
+    height: 10px !important;
+    box-shadow: 6px 5px 9px -9px black !important;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    tranform: rotate(45deg);
+}
+.avast_os_ext_arrow.avast_os_ext_top:after {
+    bottom: -10px !important;
+    top: auto !important;
+}
+
+/* ----- tooltip ---- */
+.avast_os_ext_popup_container {
+  padding: 10px 10px 10px 20px !important;
+  font-size: 16px !important;
+  height: 20px
+}
+.avast_os_ext_popup_container:hover {
+  background: lightgreen;
+}
+.avast_os_ext_popup_container .avast_os_ext_popup_text {
+  float: left;
+}
+.avast_os_ext_popup_container .avast_os_ext_popup_btn_generate {
+  float: right !important;
+  cursor: pointer !important;
+}
+.avast_os_ext_popup_container .avast_os_ext_popup_btn_generate:hover {
+  color: red;
+}
+.avast_os_ext_popup_container .avast_os_ext_popup_btn_use, .avast_os_ext_popup_container .avast_os_ext_popup_btn_use_real {
+  float: right !important;
+  cursor: pointer !important;
+}
+.avast_os_ext_popup_container .avast_os_ext_popup_btn_use:hover, .avast_os_ext_popup_container .avast_os_ext_popup_btn_use_real:hover {
+  color: red;
+}
+.avast_os_ext_popup_container .avast_os_ext_popup_btn_close {
+  float: right !important;
+  padding: 0 0 0 5px !important;
+  cursor: pointer !important;
+}
+
+.avast_os_ext_popup_container .avast_os_ext_popup_btn_close:hover {
+  color: red;
+}
+
+
+/*  AVAST legacy  */
+
+
+      /*
+        Partial reset of the dialog elements so we are not in conflict with in page css.
+
+        http://meyerweb.com/eric/tools/css/reset/
+          v2.0 | 20110126
+          License: none (public domain)
+      */
+
+      #avast-inpage , #avast-inpage div, #avast-inpage span,
+      #avast-inpage h1, #avast-inpage h2, #avast-inpage h3, #avast-inpage h4, #avast-inpage h5, #avast-inpage h6,
+      #avast-inpage p,
+      #avast-inpage a, #avast-inpage img,
+      #avast-inpage table, #avast-inpage caption, #avast-inpage tbody, #avast-inpage tfoot, #avast-inpage thead, #avast-inpage tr, #avast-inpage th, #avast-inpage td,
+      #avast-inpage figure, #avast-inpage figcaption, #avast-inpage footer, #avast-inpage header, #avast-inpage hgroup {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      #avast-inpage ol, #avast-inpage ul {
+        list-style: none;
+      }
+      #avast-inpage table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      /*
+        End Reset
+       */
+
+
+       /*
+        http://www.avast.com
+        v2.0 | copyright (c) 2013  All rights reserved.
+        */
+
+      #avast-inpage a {
+        color: #FFF !important;
+      }
+      #avast-inpage .avast-product {
+        color: #F90 !important;
+      }
+
+      #avast-inpage {
+        display: none !important;
+        font-family: Verdana, Geneva, Arial, Helvetica, sans-serif !important;
+        z-index: 1000000011 !important;
+        font-size: 12px !important;
+      }
+
+      #avast-inpage.avast-overlay {
+        display: none !important;
+        background-size: 100% 100% !important;
+      }
+      .avast-bar-on {
+        -webkit-transform: translateY(80px) !important;
+      }
+
+      .avast-bar-on.avast-install-on {
+        -webkit-transform: translateY(50px) !important;
+      }
+
+
+      .avast-bar-on #avast-inpage.avast-bar,
+      .avast-overlay-on #avast-inpage.avast-bar,
+      .avast-overlay-on #avast-inpage.avast-overlay {
+        display: block !important;
+      }
+      .avast-overlay-on {
+        overflow: hidden !important;
+        width: 100% !important;
+        height: 100% !important;
+        visibility: visible !important;
+      }
+
+
+      .avast-bar {
+        position: absolute !important;
+        left: 0px !important;
+        top: 0px !important;
+        right: 0px !important;
+        height: 77px !important;
+        background: -webkit-linear-gradient(top, #495461 0%, #273037 100%) !important;
+        background: -webkit-linear-gradient(top, #191E23 0%, #273037 100%) !important;
+        -webkit-box-shadow: inset 0px -2px 5px 0px rgba(0,0,0,0.3) !important;
+        color: #FFF !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: 0 !important;
+        border-bottom: 3px solid #FE9A0B !important;
+        font-size: 12px !important;
+        font: inherit !important;
+        vertical-align: baseline !important;
+        -webkit-transform: translateY(-80px) !important;
+        -moz-transform: translateY(-80px) !important;
+        -o-transform: translateY(-80px) !important;
+        overflow: hidden !important;
+
+      }
+      .avast-install {
+      -webkit-transform: translateY(-50px) !important;
+        -moz-transform: translateY(-50px) !important;
+        -o-transform: translateY(-50px) !important;
+        height: 50px !important;
+        font-size: 10px !important;
+      }
+      .avast-bar #avast-extra{
+        display: none !important;
+      }
+
+
+      .avast-bar #avast-actions {
+        position: absolute !important;
+        right: 0px !important;
+        bottom: 0px !important;
+        padding: 10px !important;
+        margin: 0 !important;
+        border: 0 !important;
+        font-size: 12px !important;
+        font: inherit !important;
+        vertical-align: baseline !important;
+      }
+      .avast-bar #avast-body {
+        position: absolute !important;
+        display: table !important;
+        height: 40px !important;
+        right: 0px !important;
+        left: 0px !important;
+        top: 0px !important;
+        padding: 30px 330px 0px 150px !important;
+        font-size: 13px !important;
+        background: url('../imgs/logo.png') no-repeat 15px center !important;
+        display:-moz-box !important;
+        -moz-box-orient:horizontal !important;
+        -moz-box-align:center !important;
+        display:-webkit-box !important;
+        -webkit-box-orient:horizontal !important;
+        -webkit-box-align:center !important;
+        display:box !important;
+        box-orient:horizontal !important;
+        box-align:center !important;
+      }
+      .avast-install  #avast-body {
+        height: 30px !important;
+        font-size: 10px !important;
+        padding: 10px 10px 0px 150px !important;
+      }
+
+      .avast-bar #avast-header {
+          margin-top: 5px !important;
+          padding: 3px 10px 3px 150px !important;
+          float: left !important;
+      }
+      .avast-bar #avast-title {
+          display: inline-block !important;
+          margin-top: 5px !important;
+          padding: 3px 15px 3px 15px !important;
+          -webkit-border-radius: 5px !important;
+      }
+
+      #avast-inpage a.avast-button {
+        color: #fff !important; /* text color */
+        font-family: "Lato", sans-serif !important;
+        font-size: 16px !important;
+        width: 80px !important;
+        height: 40px !important;
+        border-radius: 5px !important; /* border radius */
+        background-clip: padding-box !important; /* prevents bg color from leaking outside the border */
+        background-color: #09bdf1 !important; /* layer fill content */
+        box-shadow: inset 0 -1px 0 rgba(0,0,0,.14) !important; /* inner shadow */
+        cursor: pointer !important;
+      }
+      #avast-inpage.avast-install a.avast-button {
+        height: 20px !important;
+        padding: 3px 5px !important;
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+        margin-top: -4px !important;
+      }
+
+      .avast-overlay#avast-inpage {
+        position: absolute !important;
+        left: 0px !important;
+        top: 0px !important;
+        right: 0px !important;
+        bottom: 0px !important;
+        background-color: rgba(0,0,0,0.4) !important;
+        opacity: 0 !important;
+        -webkit-transition: opacity 0.5s ease-in-out !important;
+      }
+      .avast-overlay-on #avast-inpage {
+        opacity: 1 !important;
+      }
+
+      .avast-overlay #avast-inpage-box {
+        -webkit-transition: -webkit-transform 0.5s ease-in-out !important;
+        -webkit-transform: translateY(-200%) !important;
+      }
+      .avast-overlay #avast-inpage-box {
+        position: absolute !important;
+        left: 50% !important;
+        top: 50% !important;
+        height: 360px !important;
+        width: 550px !important;
+        margin-top: -180px !important;
+        margin-left: -275px !important;
+        opacity: .98 !important; /* layer alpha */
+        border-radius: 6px !important; /* border radius */
+        background-clip: padding-box !important; /* prevents bg color from leaking outside the border */
+        box-shadow: 0 1px 90px rgba(4,4,4,.75) !important; /* drop shadow */
+      }
+      .avast-overlay-on .avast-overlay  #avast-inpage-box {
+        -webkit-transform: translateY(0px) !important;
+      }
+      .avast-overlay #avast-header {
+        height: 110px !important;
+        background-position: center bottom !important;
+        background-repeat: no-repeat !important;
+      }
+      .avast-overlay #avast-body {
+        color: #fff !important; /* text color */
+        font-family: "Lato", sans-serif !important;
+        font-size: 15px !important;
+        text-align: center !important;
+        padding-top: 40px !important;
+        line-height: 25px !important;
+      }
+      .avast-overlay #avast-body {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .avast-overlay #avast-actions {
+        position: absolute !important;
+        left: 0px !important;
+        right: 0px !important;
+        bottom: 0px !important;
+        height: 65px !important;
+        text-align: right !important;
+        padding-top: 25px !important;
+        background-color: #fff !important;
+        border-radius: 0 0 6px 6px !important;
+      }
+
+      #avast-actions #avast-action-ignore {
+        color: #373b41 !important; /* text color */
+        font-family: "Lato", sans-serif !important;
+        font-size: 15px !important;
+        text-decoration: underline !important;
+        float: left !important;
+        padding-left: 30px !important;
+        line-height: 40px !important;
+        cursor: pointer !important;
+      }
+
+      #avast-actions #avast-action-proceed {
+        color: #fff !important; /* text color */
+        font-family: "Lato", sans-serif !important;
+        font-size: 16px !important;
+        padding: 0 10px !important;
+        min-width: 60px !important;
+        height: 40px !important;
+        border-radius: 5px !important; /* border radius */
+        background-clip: padding-box !important; /* prevents bg color from leaking outside the border */ background-color: #09bdf1 !important; /* layer fill content */
+        box-shadow: inset 0 -1px 0 rgba(0,0,0,.14) !important; /* inner shadow */
+        float: right !important;
+        line-height: 40px !important;
+        text-align: center !important;
+        cursor: pointer !important;
+        margin-right: 25px !important;
+      }
+
+      #avast-actions #avast-action-proceed.avast-action-proceed-only {
+        display: table !important;
+        margin: 0 auto !important;
+        float: none !important;
+      }
+
+      .avast-overlay #avast-title {
+        color: #fff !important; /* text color */
+        font-family: "Source Sans Pro", sans-serif !important;
+        font-size: 26px !important;
+        text-align: center !important;
+        font-weight: lighter !important;
+        padding-top: 20px !important;
+      }
+
+
+      .avast-status-ok {
+        background: #47cc83 !important;
+      }
+      .avast-status-error {
+        background: #f76470 !important;
+      }
+      .avast-status-attention {
+        background: #FE9A0B !important;
+      }
+      #avast-inpage.avast-install #avast-action-ignore {
+        margin-left: 50px !important;
+        color: #666 !important;
+      }
+
+      #avast-inpage .avast-logo {
+        background-position: center bottom !important;
+        background-repeat: no-repeat !important;
+        width: 34px !important;
+        height: 34px !important;
+        position: absolute  !important;
+        top: 20px  !important;
+        right: 20px !important;
+        opacity: 0.2 !important;
+      }

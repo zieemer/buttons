@@ -1,0 +1,122 @@
+{
+   "add": {
+      "message": "Adicionar"
+   },
+   "addCategory": {
+      "message": "Adicionar categoria"
+   },
+   "addFavorites": {
+      "message": "Adicione seus sites favoritos"
+   },
+   "addNewCategory": {
+      "message": "Introduzir nome da categoria"
+   },
+   "addWebsite": {
+      "message": "Adicionar site"
+   },
+   "bgCatalog": {
+      "message": "Do catálogo"
+   },
+   "bgColor": {
+      "message": "Cor sublayer"
+   },
+   "bgLocal": {
+      "message": "Envio de imagem"
+   },
+   "bgRandom": {
+      "message": "Fundo aleatório"
+   },
+   "bgSettings": {
+      "message": "Configurações"
+   },
+   "confirm": {
+      "message": "Sim"
+   },
+   "confirmCatDelete": {
+      "message": "Eliminar categoria?"
+   },
+   "curlang": {
+      "message": "pt"
+   },
+   "decline": {
+      "message": "Não"
+   },
+   "deleteHistory": {
+      "message": "Limpar toda a lista"
+   },
+   "deleteWebsite": {
+      "message": "Excluir website"
+   },
+   "edit": {
+      "message": "Mudar"
+   },
+   "editWebsite": {
+      "message": "Mudar website"
+   },
+   "emptyRecentTab": {
+      "message": "Separadores Recentemente Fechados"
+   },
+   "goToHistory": {
+      "message": "Ir para a história"
+   },
+   "historyEmpty": {
+      "message": "A história está vazia"
+   },
+   "historyWidget": {
+      "message": "Páginas recentes deste website"
+   },
+   "more": {
+      "message": "Mais"
+   },
+   "moreItems": {
+      "message": "Mostre mais"
+   },
+   "newWebsiteTitle": {
+      "message": "Nome do site"
+   },
+   "newWebsiteURL": {
+      "message": "Digite a URL do site"
+   },
+   "ok": {
+      "message": "Ok"
+   },
+   "pageTitle": {
+      "message": "Os sites mais populares"
+   },
+   "recent": {
+      "message": "Recente"
+   },
+   "recommended": {
+      "message": "Recomendado"
+   },
+   "searchButton": {
+      "message": "Pesquisar"
+   },
+   "searchOptions": {
+      "message": "Configurações de pesquisa"
+   },
+   "select": {
+      "message": "Selecionar"
+   },
+   "siteDuplicate": {
+      "message": "Este site já está listado"
+   },
+   "themesHeader": {
+      "message": "Orbitum temas"
+   },
+   "themesLoading": {
+      "message": "Por favor, aguarde - carregando ..."
+   },
+   "themesLoadingFailed": {
+      "message": "Não foi possível carregar"
+   },
+   "today": {
+      "message": "Hoje"
+   },
+   "upload": {
+      "message": "Envio"
+   },
+   "yesterday": {
+      "message": "Ontem"
+   }
+}

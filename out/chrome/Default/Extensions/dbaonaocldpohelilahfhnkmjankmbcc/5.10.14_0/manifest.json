@@ -1,0 +1,24 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "chrome_url_overrides": {
+      "newtab": "blank.html"
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.google-analytics.com; object-src 'self'",
+   "default_locale": "en",
+   "description": "Orbitum Speed Dial's the perfect way to upgrade the New Tab with beautiful backgrounds and easy-access to your favorite websites.",
+   "icons": {
+      "128": "/resources/128.png",
+      "16": "/resources/16.png",
+      "32": "/resources/32.png",
+      "48": "/resources/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtJRyr6P3AUdClec0lIHzBfH3xxw3TEfHSpKpHp1fP2p/7m9tCBZg60xfKDxeaJDiF5JeOqQ7xZ8RRpALcfm2MGd307K9lQUbyCq8HZvX/Y2a8Fu1TonmzFWXJebWhFtmXonv3UYU5UTAHmTaJsAXoDzHWK+BzpfUyNOr/VPzETLEkdvC9/55lNXimxyHNFNnnHQ5Zo5/Aeqy+RnGqhjtUlgSf0g0ZLvyM9Vb5ZUgIwvhcR2PyF6levZgDQlCuF/4OAF9ajkf0k7EHTisk7s+xQMiwKZC10ZsSUMPoLd29u1KQFNSW/B87DCSpjKL0x1S3pTFltUx/6re9H6hXE1TkwIDAQAB",
+   "manifest_version": 2,
+   "name": "Orbitum Speed Dial",
+   "permissions": [ "bookmarks", "downloads", "downloads.shelf", "webNavigation", "webRequest", "webRequestBlocking", "history", "management", "history", "cookies", "sessions", "storage", "unlimitedStorage", "tabs", "chrome://favicon/*", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "5.10.14",
+   "web_accessible_resources": [ "view/blank.html", "/resources/*.png", "/resources/**/*.jpg", "/resources/books/presets/ru/*.jpg", "/resources/books/presets/en/*.jpg" ]
+}

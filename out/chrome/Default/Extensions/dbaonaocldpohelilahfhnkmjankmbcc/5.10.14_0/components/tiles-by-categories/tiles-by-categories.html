@@ -1,0 +1,22 @@
+<div class="dropdown" id="recSelect" data-ng-if="current.items.length">
+    <div class="listCatCont" id="popupCatSelect" data-tiles-categories-dropdown>
+        <div class="listCat">
+            <p>{{current.title}}</p><span></span>
+        </div>
+        <ul class="listCatItems">
+            <li
+                data-ng-repeat="category in categories"
+                data-ng-click="selectCategory(category.id)"
+            >{{::category.title}}</li>
+        </ul>
+    </div>
+</div>
+<div class="recBlocks" data-ng-if="current.items.length">
+    <a
+        data-ng-repeat="item in current.items | limitTo:itemsLimit"
+        data-ng-click="addSite(item)"
+    >
+        <img data-ng-src="{{::item.image}}">
+    </a>
+</div>
+<div class="recMore" data-ng-click="showMore()" data-ng-show="showMoreText">{{::moreText}}</div>

@@ -1,0 +1,130 @@
+body {
+  margin: 0px;
+  min-width: 800px;
+}
+
+.settings {
+  margin-bottom: 175px;
+}
+
+.settings-title {
+  background: url(../img/avast-logo.png) no-repeat 100px;
+  background-color: #ddd;
+  line-height: 130px;
+  padding-left: 260px;
+  color: #67737b; /* text color */
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 22px;
+  margin-bottom: 25px;
+  height: 130px;
+  background-color: #f8f8f8; /* layer fill content */
+}
+
+.item {
+  clear: both;
+  line-height: 30px;
+  padding: 20px 0 0 100px;
+}
+
+.name {
+  float: left;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #414b55; /* text color */
+  margin-right: 10px;
+}
+
+.item-disabled .name {
+  color: #798897; /* text color */
+}
+
+.sub-feature {
+  padding: 0 0 0 135px;
+  height: 30px;
+}
+
+.description {
+  float: left;
+  line-height: 20px;
+  height: 20px;
+  font-family: "Lato", sans-serif !important;
+  font-size: 14px;
+  color: #77838b; /* text color */
+  padding-top: 5px;
+}
+
+.item-disabled .description {
+  color: #B3C1CA; /* text color */
+}
+
+.checkbox {
+  float: left;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #c9cbcf;
+  border-radius: 3px;
+  background-clip: padding-box;
+  background-color: #dddfe1;
+  margin: 5px 15px 0 0px;
+  cursor: pointer;
+}
+
+.item-disabled .checkbox {
+  border: 1px solid #E0E2E6;
+  background-color: #EEF1F3;
+  cursor: default;
+}
+
+.checkbox-checked, .checkbox-intermed {
+  background-color: #414b55;
+  border: 1px solid #49535f;
+  background-repeat: no-repeat;
+}
+
+.checkbox-checked {
+  background-image: url(../img/icn_check.png);
+  background-position: 4px 4px;
+}
+
+.checkbox-intermed {
+  background-image: url(../img/icn_interm.png);
+  background-position: 3px 3px;
+}
+
+.item-disabled .checkbox-checked {
+  background-color: #798897;
+  border: 1px solid #748292;
+}
+
+.buttons {
+  padding-top: 40px;
+  padding-left: 100px;
+  height: 90px;
+  border: 1px solid #ebebeb;
+  background-color: #f8f8f8;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+
+.button {
+  cursor: pointer;
+  border: #67737b;
+  color: #67737b; /* text color */
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  padding: 0 35px 0 35px;
+  height: 40px;
+  border-radius: 5px; /* border radius */
+  background-clip: padding-box; /* prevents bg color from leaking outside the border */
+  background-color: #dddfe1; /* layer fill content */
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.14); /* inner shadow */
+}
+
+.button.blue {
+  border: #09bdf1;
+  background-color: #09bdf1; /* layer fill content */
+  color: #fff; /* text color */
+}
+

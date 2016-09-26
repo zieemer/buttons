@@ -1,0 +1,32 @@
+<ul class="bookmarks-container">
+    <li class="history-wrapper">
+        <div class="history-controls">
+            <a href="#" class="full-history-btn" data-ng-cloak data-ng-click="showAllHistory($event)">{{::translate.showHistory}}</a>
+            <a href="#" class="clear-history-brn" data-ng-cloak data-ng-click="removeAllHistory($event)">{{::translate.delHistory}}</a>
+        </div>
+
+        <div class="history-container" data-remove-history-item>
+            <div class="history-col" data-ng-if="tiles.length">
+
+                <div class="history-item" data-ng-repeat="tile in tiles" data-ng-class="{'js-hist': tile.url != undefined}">
+
+                    <div class="history-date-container" data-ng-if="tile.date">
+                        <div class="history-date">{{getFormatDate(tile.date)}}</div>
+                        <div class="history-date-line"></div>
+                    </div>
+                    <div class="history-elem" data-ng-if="tile.url">
+                        <a href="{{::tile.url}}" class="del-history-item"></a>
+                        <a data-ng-href="{{::tile.url}}" class="history-link">
+                            <span class="history-time">{{::tile.lastVisitTime}}</span>
+                            <img ng-src="{{getFavicon(tile.url)}}" class="history-item-favicon" />
+                            <span class="history-item-title">{{::tile.title}}</span>
+                            <span class="history-item-link">{{::tile.url}}</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-ng-show="tiles && tiles.length == 0" class="if-history-empty invite-to-add"
+                 data-ng-cloak>{{::translate.historyEmpty}}</div>
+        </div>
+    </li>
+</ul>

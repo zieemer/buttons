@@ -1,0 +1,61 @@
+<div class="top-settings" data-ng-controller="SettingsController">
+    <pin data-pinned="pinned" data-ng-if="stateComponents.showThemeIcons"></pin>
+    <div class="refresh-icon" ng-class="{disabled: pinned, 'animated disabled': refreshingTheme}" data-ng-if="stateComponents.showThemeIcons" data-ng-click="changeTheme()"></div>
+    <div class="settings-icon" data-ng-click="stateComponents.popupIsVisible = !stateComponents.popupIsVisible"></div>
+    <div class="settings-container" data-ng-show="stateComponents.popupIsVisible"
+         data-click-outside="closeThis()" data-outside-if-not="settings-icon,settings-container,popup-container,close-popup,themes-catalog-popup,overlay">
+        <div class="settings-inner-container">
+            <h1 class="settings-title">{{::componentsValue.bgSettings}}</h1>
+            <input type="checkbox" data-ng-model="userThemeSettings.themeOn" data-ng-change="changeBgToggle()"
+                   data-ng-model-options="{ debounce: 200 }"
+                   name="background-turn" class="background-turn" id="background-turn">
+            <label for="background-turn" class="background-turn-label"><span class="disable-background"></span></label>
+            <div>
+                <input type="radio" name="select-background" value="random-background"
+                       class="random-background" id="random-background"
+                       data-ng-model="userThemeSettings.typeBackground"
+                       data-ng-change="changeTypeBg()">
+                <label for="random-background" class="random-background-label">{{::componentsValue.bgRandom}}</label>
+                <div class="images-cat-container" data-ng-repeat="cat in dataThemes.categories track by $index">
+                    <input type="checkbox" name="{{::'image-cat' + cat.id}}"
+                           data-ng-model="cat.model"
+                           data-ng-change="categoriesOfRandom($index)"
+                           class="image-cat" id="{{::'cat' + cat.id}}">
+                    <label for="{{::'cat' + cat.id}}" data-id="{{::cat.id}}" class="cat1-label">{{::cat.title}}</label>
+                </div>
+            </div>
+
+            <div>
+                <input type="radio" name="select-background" value="catalog-background"
+                       class="catalog-background" id="catalog-background"
+                       data-ng-model="userThemeSettings.typeBackground"
+                       data-ng-change="changeTypeBg()">
+                <label for="catalog-background" class="catalog-background-label">{{::componentsValue.bgCatalog}}</label>
+                <div class="select-from-server" data-ng-click="showThemesCatalog($event)">{{::componentsValue.select}}</div>
+            </div>
+
+            <div>
+                <input type="radio" name="select-background"
+                       value="loading-background" class="loading-background"
+                       id="loading-background" data-ng-model="userThemeSettings.typeBackground"
+                       data-ng-change="changeTypeBg()">
+                <label for="loading-background" class="loading-background-label">{{::componentsValue.bgLocal}}</label><br/>
+                <input type="file" class="bg-select"
+                       id="bg-select" data-fileread=""
+                       accept="image/jpeg,image/png,image/gif">
+                <label for="bg-select" class="bg-select-label">{{::componentsValue.upload}}</label>
+                <div class="clear-user-img" data-ng-click="removeUserPicture()">
+                    <span></span>
+                </div>
+            </div>
+            <sub-colors></sub-colors>
+            <hr/>
+            <h1 class="settings-title">{{::componentsValue.searchSettings}}</h1>
+            <div dropdown-select="ddSelectOptions"
+                 data-dropdown-model="ddSelectSelected"
+                 data-dropdown-item-label="name"
+                 data-dropdown-onchange="setSearch(selected)">
+            </div>
+        </div>
+    </div>
+</div>

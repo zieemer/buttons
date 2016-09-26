@@ -1,0 +1,125 @@
+{
+   "add": {
+      "message": "Добавить"
+   },
+   "addCategory": {
+      "message": "Добавить категорию"
+   },
+   "addFavorites": {
+      "message": "Добавьте любимые сайты"
+   },
+   "addNewCategory": {
+      "message": "Имя новой категории"
+   },
+   "addWebsite": {
+      "message": "Добавить сайт"
+   },
+   "appDesc": {
+      "message": "Orbitum Speed Dial это отличный способ прокачать Новую Вкладку: красивые заставки, быстрый доступ к сайтам, гибкая кастомизация."
+   },
+   "bgCatalog": {
+      "message": "Из каталога"
+   },
+   "bgColor": {
+      "message": "Цвет подложки"
+   },
+   "bgLocal": {
+      "message": "Загруженное изображение"
+   },
+   "bgRandom": {
+      "message": "Случайные обои"
+   },
+   "bgSettings": {
+      "message": "Настройки фона"
+   },
+   "confirm": {
+      "message": "Да"
+   },
+   "confirmCatDelete": {
+      "message": "Удалить раздел?"
+   },
+   "curlang": {
+      "message": "ru"
+   },
+   "decline": {
+      "message": "Нет"
+   },
+   "deleteHistory": {
+      "message": "Очистить весь список"
+   },
+   "deleteWebsite": {
+      "message": "Удалить сайт"
+   },
+   "edit": {
+      "message": "Изменить"
+   },
+   "editWebsite": {
+      "message": "Изменить сайт"
+   },
+   "emptyRecentTab": {
+      "message": "Недавно закрытые вкладки"
+   },
+   "goToHistory": {
+      "message": "Перейти в историю"
+   },
+   "historyEmpty": {
+      "message": "История пуста"
+   },
+   "historyWidget": {
+      "message": "Недавняя история по сайту"
+   },
+   "more": {
+      "message": "ещё"
+   },
+   "moreItems": {
+      "message": "Больше"
+   },
+   "newWebsiteTitle": {
+      "message": "Название сайта"
+   },
+   "newWebsiteURL": {
+      "message": "Введите адрес сайта"
+   },
+   "ok": {
+      "message": "Ok"
+   },
+   "pageTitle": {
+      "message": "Популярные сайты"
+   },
+   "recent": {
+      "message": "Недавние"
+   },
+   "recommended": {
+      "message": "Рекомендуемые"
+   },
+   "searchButton": {
+      "message": "Искать"
+   },
+   "searchOptions": {
+      "message": "Настройки поиска"
+   },
+   "select": {
+      "message": "Выбрать"
+   },
+   "siteDuplicate": {
+      "message": "Такой сайт уже есть в списке"
+   },
+   "themesHeader": {
+      "message": "Темы оформления Орбитума"
+   },
+   "themesLoading": {
+      "message": "Пожалуйста, подождите — темы загружаются..."
+   },
+   "themesLoadingFailed": {
+      "message": "Не удалось загрузить темы"
+   },
+   "today": {
+      "message": "Сегодня"
+   },
+   "upload": {
+      "message": "Загрузить"
+   },
+   "yesterday": {
+      "message": "Вчера"
+   }
+}

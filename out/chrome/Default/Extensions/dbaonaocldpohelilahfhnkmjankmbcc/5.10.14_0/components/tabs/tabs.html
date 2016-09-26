@@ -1,0 +1,54 @@
+<div class="bookmarks">
+    <div
+        id="category-form"
+        class="add-category"
+        data-ng-show="showCategoryForm"
+        data-click-outside="closeCategoryForm()"
+        data-outside-if-not="category-form,add-category-button">
+        <form
+            class="add-category-item"
+            name="categoryForm"
+            novalidate
+            data-ng-submit="categoryForm.$valid && addCategoryForm.submit()"
+        >
+            <input
+                type="text"
+                class="add-category-input"
+                placeholder="{{::addCategoryForm.titlePlaceholder}}"
+                data-ng-model="addCategoryForm.title"
+                required
+                data-focus="showCategoryForm"
+            >
+            <button type="submit" class="add-category-btn"></button>
+        </form>
+    </div>
+
+    <ul class="books-cats">
+        <li
+            data-ng-repeat="tab in tabs | limitTo: maxShowedTabs"
+            data-ng-class="{active: tab.id === currentTab || tab.title === currentTab}"
+            data-ng-click="selectTab($event, tab)">
+            <tab></tab>
+        </li>
+        <li
+            class="more-cats"
+            data-ng-mouseenter="showMore(true)"
+            data-ng-mouseleave="showMore(false)"
+            data-ng-show="tabs.length > maxShowedTabs"
+        >
+            <p>{{::moreTitle}}</p>
+            <span></span>
+            <ul class="more-cats-container" data-ng-show="showMoreTabs">
+                <li
+                    data-ng-repeat="tab in tabs"
+                    data-ng-if="$index >= maxShowedTabs"
+                    data-ng-class="{active: tab.id === currentTab || tab.title === currentTab}"
+                    data-ng-click="selectTab($event, tab)">
+                    <tab></tab>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div id="add-category-button" class="listCatAdd" data-ng-click="addCategory()"><span></span>{{::addCategoryTitle}}</div>
+</div>

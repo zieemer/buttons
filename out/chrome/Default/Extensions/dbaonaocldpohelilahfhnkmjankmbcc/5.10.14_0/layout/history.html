@@ -1,0 +1,251 @@
+<!doctype html>
+<html data-ng-app="mainModule">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <link rel="shortcut icon" href="/resources/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript" src="/public/bundle.js"></script>
+
+</head>
+
+<body data-ng-controller="MainController">
+
+<div data-ng-controller="SearchController">
+    <div data-search></div>
+</div>
+
+<div data-ng-controller="TilesController">
+    <div data-tiles-list></div>
+    <div data-ng-controller="TileFormController" data-tile-form data-ng-show="showForm"></div>
+</div>
+
+
+<div class="container">
+    <div class="content">
+        <div class="search-container">
+            <form action="#" class="search-form">
+                <div class="search-logo yandex"></div>
+                <input type="text" class="search-input" name="text" placeholder="Ищите здесь..." autocomplete="off">
+                <input type="submit" class="search-btn" value="Искать">
+            </form>
+            <div class="omnibox">
+                <div class="omni-link">adasdasd</div>
+            </div>
+        </div>
+
+        <div class="bookmarks">
+            <ul class="add-category">
+                <li class="add-category-item">
+                    <input type="text" class="add-category-input" placeholder="Имя новой категории">
+                    <div class="add-category-btn"></div>
+                </li>
+            </ul>
+
+            <ul class="books-cats">
+                <li class="active">
+                    <div class="del-cat"></div>
+                    <p>Рекомендуемые</p>
+                </li>
+                <li>
+                    <div class="del-cat"></div>
+                    <p>Категория 1</p>
+                </li>
+                <li>
+                    <div class="del-cat"></div>
+                    <p>Категория 2</p>
+                </li>
+                <li class="more-cats">
+                    <p>ещё</p>
+                    <span></span>
+                    <ul class="more-cats-container">
+                        <li>
+                            <div class="del-cat"></div>
+                            <p>Категория 3</p>
+                        </li>
+                        <li>
+                            <div class="del-cat"></div>
+                            <p>Категория 4</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="listCatAdd"><span></span>Добавить категорию</div>
+        </div>
+
+        <ul class="bookmarks-container">
+            <li class="history-wrapper">
+                <div class="history-controls">
+                    <a href="#" class="full-history-btn">Перейти в историю</a>
+                    <a href="#" class="clear-history-brn">Очистить весь список</a>
+                </div>
+
+                <div class="history-container">
+                    <div class="history-col">
+                        <div class="history-date-container">
+                            <div class="history-date">Сегодня - вторник, 19 апреля 2016 г.</div>
+                            <div class="history-date-line"></div>
+                        </div>
+
+                        <div class="history-item">
+                            <a href="#" class="del-history-item"></a>
+                            <a href="#" class="history-link">
+                                <span class="history-time">12:30</span>
+                                <span class="history-item-favicon"></span>
+                                <span class="history-item-title">Особо важные документы</span>
+                                <span class="history-item-link">https://docs.google.com/document/d/1qweasdadf42/</span>
+                            </a>
+                        </div>
+
+                        <div class="history-item">
+                            <a href="#" class="del-history-item"></a>
+                            <a href="#" class="history-link">
+                                <span class="history-time">12:30</span>
+                                <span class="history-item-favicon"></span>
+                                <span class="history-item-title">Особо важные документы</span>
+                                <span class="history-item-link">https://docs.google.com/document/d/1qweasdadf42/</span>
+                            </a>
+                        </div>
+
+                        <div class="history-item">
+                            <a href="#" class="del-history-item"></a>
+                            <a href="#" class="history-link">
+                                <span class="history-time">12:30</span>
+                                <span class="history-item-favicon"></span>
+                                <span class="history-item-title">Особо важные документы</span>
+                                <span class="history-item-link">https://docs.google.com/document/d/1qweasdadf42/</span>
+                            </a>
+                        </div>
+
+                        <div class="history-item">
+                            <a href="#" class="del-history-item"></a>
+                            <a href="#" class="history-link">
+                                <span class="history-time">12:30</span>
+                                <span class="history-item-favicon"></span>
+                                <span class="history-item-title">Особо важные документы</span>
+                                <span class="history-item-link">https://docs.google.com/document/d/1qweasdadf42/</span>
+                            </a>
+                        </div>
+
+                        <div class="history-item">
+                            <a href="#" class="del-history-item"></a>
+                            <a href="#" class="history-link">
+                                <span class="history-time">12:30</span>
+                                <span class="history-item-favicon"></span>
+                                <span class="history-item-title">Особо важные документы</span>
+                                <span class="history-item-link">https://docs.google.com/document/d/1qweasdadf42/</span>
+                            </a>
+                        </div>
+
+                        <div class="history-item">
+                            <a href="#" class="del-history-item"></a>
+                            <a href="#" class="history-link">
+                                <span class="history-time">12:30</span>
+                                <span class="history-item-favicon"></span>
+                                <span class="history-item-title">Особо важные документы</span>
+                                <span class="history-item-link">https://docs.google.com/document/d/1qweasdadf42/</span>
+                            </a>
+                        </div>
+
+                        <div class="history-item">
+                            <a href="#" class="del-history-item"></a>
+                            <a href="#" class="history-link">
+                                <span class="history-time">12:30</span>
+                                <span class="history-item-favicon"></span>
+                                <span class="history-item-title">Особо важные документы</span>
+                                <span class="history-item-link">https://docs.google.com/document/d/1qweasdadf42/</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="history-col">
+                        <div class="history-date-container">
+                            <div class="history-date">Вчера - понедельник, 18 апреля 2016 г.</div>
+                            <div class="history-date-line"></div>
+                        </div>
+
+                        <div class="history-item">
+                            <a href="#" class="del-history-item"></a>
+                            <a href="#" class="history-link">
+                                <span class="history-time">12:30</span>
+                                <span class="history-item-favicon"></span>
+                                <span class="history-item-title">Особо важные документы</span>
+                                <span class="history-item-link">https://docs.google.com/document/d/1qweasdadf42/</span>
+                            </a>
+                        </div>
+
+                        <div class="history-item">
+                            <a href="#" class="del-history-item"></a>
+                            <a href="#" class="history-link">
+                                <span class="history-time">12:30</span>
+                                <span class="history-item-favicon"></span>
+                                <span class="history-item-title">Особо важные документы</span>
+                                <span class="history-item-link">https://docs.google.com/document/d/1qweasdadf42/</span>
+                            </a>
+                        </div>
+
+                        <div class="history-item">
+                            <a href="#" class="del-history-item"></a>
+                            <a href="#" class="history-link">
+                                <span class="history-time">12:30</span>
+                                <span class="history-item-favicon"></span>
+                                <span class="history-item-title">Особо важные документы</span>
+                                <span class="history-item-link">https://docs.google.com/document/d/1qweasdadf42/</span>
+                            </a>
+                        </div>
+
+                        <div class="history-item">
+                            <a href="#" class="del-history-item"></a>
+                            <a href="#" class="history-link">
+                                <span class="history-time">12:30</span>
+                                <span class="history-item-favicon"></span>
+                                <span class="history-item-title">Особо важные документы</span>
+                                <span class="history-item-link">https://docs.google.com/document/d/1qweasdadf42/</span>
+                            </a>
+                        </div>
+
+                        <div class="history-item">
+                            <a href="#" class="del-history-item"></a>
+                            <a href="#" class="history-link">
+                                <span class="history-time">12:30</span>
+                                <span class="history-item-favicon"></span>
+                                <span class="history-item-title">Особо важные документы</span>
+                                <span class="history-item-link">https://docs.google.com/document/d/1qweasdadf42/</span>
+                            </a>
+                        </div>
+
+                        <div class="history-item">
+                            <a href="#" class="del-history-item"></a>
+                            <a href="#" class="history-link">
+                                <span class="history-time">12:30</span>
+                                <span class="history-item-favicon"></span>
+                                <span class="history-item-title">Особо важные документы</span>
+                                <span class="history-item-link">https://docs.google.com/document/d/1qweasdadf42/</span>
+                            </a>
+                        </div>
+
+                        <div class="history-item">
+                            <a href="#" class="del-history-item"></a>
+                            <a href="#" class="history-link">
+                                <span class="history-time">12:30</span>
+                                <span class="history-item-favicon"></span>
+                                <span class="history-item-title">Особо важные документы</span>
+                                <span class="history-item-link">https://docs.google.com/document/d/1qweasdadf42/</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

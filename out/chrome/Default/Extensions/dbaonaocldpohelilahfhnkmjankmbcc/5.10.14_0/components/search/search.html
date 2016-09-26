@@ -1,0 +1,29 @@
+<div class="search-container">
+    <div class="top-blur-container">
+        <div class="blur-bg"></div>
+        <div class="blur-overlay" data-color-bg></div>
+    </div>
+    <form class="search-form" data-ng-submit="search()">
+        <img class="search-logo" data-ng-src="{{searchLogo}}" data-default-src="/resources/search.png" />
+        <input
+            type="text"
+            class="search-input"
+            autocomplete="off"
+            placeholder="{{::queryPlaceholder}}"
+            data-ng-model="query"
+            data-ng-focus="focus()"
+            data-arrow-select="selectSuggestion(element)"
+            data-arrow-select-reset="allowSuggests()"
+            data-arrow-select-from="omnibox"
+            data-arrow-select-active="selected"
+        />
+
+        <input
+            type="submit"
+            class="search-btn"
+            value="{{::searchButtonTitle}}">
+    </form>
+    <div class="omnibox" data-ng-show="suggestions.length" data-click-outside="closeThis()">
+        <div class="omni-link" data-ng-repeat="suggestion in suggestions" data-ng-click="useSuggestion(suggestion)">{{::suggestion}}</div>
+    </div>
+</div>

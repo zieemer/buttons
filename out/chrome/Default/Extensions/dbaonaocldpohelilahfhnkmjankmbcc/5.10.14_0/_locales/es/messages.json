@@ -1,0 +1,122 @@
+{
+   "add": {
+      "message": "Agregar"
+   },
+   "addCategory": {
+      "message": "Agregar una nueva categoría"
+   },
+   "addFavorites": {
+      "message": "Agregue sus sitios web favoritos"
+   },
+   "addNewCategory": {
+      "message": "Digite el nombre de la Categoría"
+   },
+   "addWebsite": {
+      "message": "Agregar el sitio"
+   },
+   "bgCatalog": {
+      "message": "Desde el catálogo"
+   },
+   "bgColor": {
+      "message": "El color subcapa"
+   },
+   "bgLocal": {
+      "message": "Imagen cargada"
+   },
+   "bgRandom": {
+      "message": "Fondo al azar"
+   },
+   "bgSettings": {
+      "message": "Ajustes de fondo"
+   },
+   "confirm": {
+      "message": "Si"
+   },
+   "confirmCatDelete": {
+      "message": "¿Eliminar categoría?"
+   },
+   "curlang": {
+      "message": "es"
+   },
+   "decline": {
+      "message": "No"
+   },
+   "deleteHistory": {
+      "message": "Borrar la lista completa"
+   },
+   "deleteWebsite": {
+      "message": "Eliminar página web"
+   },
+   "edit": {
+      "message": "Cambiar"
+   },
+   "editWebsite": {
+      "message": "Cambiar la web"
+   },
+   "emptyRecentTab": {
+      "message": "Pestañas cerradas recientemente"
+   },
+   "goToHistory": {
+      "message": "Ir a la historia"
+   },
+   "historyEmpty": {
+      "message": "La historia está vacía"
+   },
+   "historyWidget": {
+      "message": "Páginas recientes de este sitio web"
+   },
+   "more": {
+      "message": "Más"
+   },
+   "moreItems": {
+      "message": "Más"
+   },
+   "newWebsiteTitle": {
+      "message": "Nombre del sitio"
+   },
+   "newWebsiteURL": {
+      "message": "Escriba la dirección URL del sitio"
+   },
+   "ok": {
+      "message": "Ok"
+   },
+   "pageTitle": {
+      "message": "Los sitios populares"
+   },
+   "recent": {
+      "message": "Reciente"
+   },
+   "recommended": {
+      "message": "Recomendados"
+   },
+   "searchButton": {
+      "message": "Buscar"
+   },
+   "searchOptions": {
+      "message": "La configuración de búsqueda"
+   },
+   "select": {
+      "message": "Seleccionar"
+   },
+   "siteDuplicate": {
+      "message": "Este sitio ya está en la lista"
+   },
+   "themesHeader": {
+      "message": "Orbitum temas"
+   },
+   "themesLoading": {
+      "message": "Por favor, espere - cargando ..."
+   },
+   "themesLoadingFailed": {
+      "message": "No se pudo cargar"
+   },
+   "today": {
+      "message": "Hoy"
+   },
+   "upload": {
+      "message": "Subir"
+   },
+   "yesterday": {
+      "message": "Ayer"
+   }
+}

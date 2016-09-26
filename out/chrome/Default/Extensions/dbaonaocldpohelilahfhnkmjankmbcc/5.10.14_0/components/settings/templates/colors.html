@@ -1,0 +1,10 @@
+<div class="sublayer">
+    <h2 class="sublayer-title">{{::componentsValue.bgColor}}</h2>
+    <ul class="subcolor">
+        <li data-ng-class='{"active": $index == currentColor}'
+            data-ng-click="clickColor($index, item)"
+            data-ng-repeat="item in colors track by $index"
+            data-ng-style='{"background-color": item.color}'>
+        </li>
+    </ul>
+</div>

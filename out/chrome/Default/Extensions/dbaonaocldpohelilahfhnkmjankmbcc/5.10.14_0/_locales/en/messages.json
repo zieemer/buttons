@@ -1,0 +1,125 @@
+{
+   "add": {
+      "message": "Add"
+   },
+   "addCategory": {
+      "message": "Add new category"
+   },
+   "addFavorites": {
+      "message": "Add your favourite websites"
+   },
+   "addNewCategory": {
+      "message": "Enter the category name"
+   },
+   "addWebsite": {
+      "message": "Add the site"
+   },
+   "appDesc": {
+      "message": "Orbitum Speed Dial's the perfect way to upgrade the New Tab with beautiful backgrounds and easy-access to your favorite websites."
+   },
+   "bgCatalog": {
+      "message": "From catalog"
+   },
+   "bgColor": {
+      "message": "Sublayer color"
+   },
+   "bgLocal": {
+      "message": "Uploaded image"
+   },
+   "bgRandom": {
+      "message": "Random background"
+   },
+   "bgSettings": {
+      "message": "Background settings"
+   },
+   "confirm": {
+      "message": "Yes"
+   },
+   "confirmCatDelete": {
+      "message": "Delete category?"
+   },
+   "curlang": {
+      "message": "en"
+   },
+   "decline": {
+      "message": "No"
+   },
+   "deleteHistory": {
+      "message": "Clear all history"
+   },
+   "deleteWebsite": {
+      "message": "Delete website"
+   },
+   "edit": {
+      "message": "Change"
+   },
+   "editWebsite": {
+      "message": "Edit website"
+   },
+   "emptyRecentTab": {
+      "message": "Recently closed tabs"
+   },
+   "goToHistory": {
+      "message": "Go into the history"
+   },
+   "historyEmpty": {
+      "message": "History is empty"
+   },
+   "historyWidget": {
+      "message": "This website's recent pages"
+   },
+   "more": {
+      "message": "More"
+   },
+   "moreItems": {
+      "message": "More"
+   },
+   "newWebsiteTitle": {
+      "message": "Site title"
+   },
+   "newWebsiteURL": {
+      "message": "Type the URL of the site"
+   },
+   "ok": {
+      "message": "Ok"
+   },
+   "pageTitle": {
+      "message": "Popular websites"
+   },
+   "recent": {
+      "message": "Recent"
+   },
+   "recommended": {
+      "message": "Recommended"
+   },
+   "searchButton": {
+      "message": "Search"
+   },
+   "searchOptions": {
+      "message": "Search settings"
+   },
+   "select": {
+      "message": "Select"
+   },
+   "siteDuplicate": {
+      "message": "This site is already listed"
+   },
+   "themesHeader": {
+      "message": "Orbitum themes"
+   },
+   "themesLoading": {
+      "message": "Please wait - loading..."
+   },
+   "themesLoadingFailed": {
+      "message": "Could not load"
+   },
+   "today": {
+      "message": "Today"
+   },
+   "upload": {
+      "message": "Upload"
+   },
+   "yesterday": {
+      "message": "Yesterday"
+   }
+}

@@ -1,0 +1,21 @@
+<div class="overlay catalog-popup" data-ng-show="catalogIsVisible" >
+    <div id="themes-catalog-popup" class="popup-container select-theme-container" data-click-outside="closeCatalog()" data-outside-if-not="themes-catalog-popup,settings-container">
+        <div class="close-popup"></div>
+        <p class="popup-title">{{::themesHeader}}</p>
+        <ul class="themes-cats-list">
+            <li
+                class="category"
+                data-ng-repeat="category in categories"
+                data-ng-class="{active: category.id === currentCategoryId}"
+                data-ng-click="selectCategory(category.id)">
+                {{::category.title}}
+            </li>
+        </ul>
+        <div class="theme-images">
+            <div class="one-theme" data-ng-repeat="theme in themes">
+                <img data-ng-src="{{::theme.preview}}" data-ng-click="selectTheme(theme)">
+            </div>
+            <div data-ng-show="!themes.length">{{loadingText}}</div>
+        </div>
+    </div>
+</div>

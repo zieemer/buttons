@@ -1,0 +1,122 @@
+{
+   "add": {
+      "message": "إضافة"
+   },
+   "addCategory": {
+      "message": "إضافة فئة جديدة"
+   },
+   "addFavorites": {
+      "message": "إضافة المواقع المفضلة لديك"
+   },
+   "addNewCategory": {
+      "message": "أدخل اسم الفئة"
+   },
+   "addWebsite": {
+      "message": "إضافة موقع"
+   },
+   "bgCatalog": {
+      "message": "من الكتالوج"
+   },
+   "bgColor": {
+      "message": "لون الخلفية"
+   },
+   "bgLocal": {
+      "message": "صورته"
+   },
+   "bgRandom": {
+      "message": "خلفيات عشوائية"
+   },
+   "bgSettings": {
+      "message": "إعدادات الخلفيات"
+   },
+   "confirm": {
+      "message": "نعم"
+   },
+   "confirmCatDelete": {
+      "message": "حذف الفئة؟"
+   },
+   "curlang": {
+      "message": "ar"
+   },
+   "decline": {
+      "message": "لا"
+   },
+   "deleteHistory": {
+      "message": "مسح القائمة بالكامل"
+   },
+   "deleteWebsite": {
+      "message": "حذف موقع"
+   },
+   "edit": {
+      "message": "تغيير"
+   },
+   "editWebsite": {
+      "message": "تغيير الموقع"
+   },
+   "emptyRecentTab": {
+      "message": "علامات التبويب المغلقة مؤخرا"
+   },
+   "goToHistory": {
+      "message": "انتقل إلى قصة"
+   },
+   "historyEmpty": {
+      "message": "تاريخ فارغ"
+   },
+   "historyWidget": {
+      "message": "صفحات هذا الموقع في الآونة الأخيرة"
+   },
+   "more": {
+      "message": "أكثر"
+   },
+   "moreItems": {
+      "message": "أكثر"
+   },
+   "newWebsiteTitle": {
+      "message": "اسم الموقع"
+   },
+   "newWebsiteURL": {
+      "message": "اكتب عنوان URL للموقع"
+   },
+   "ok": {
+      "message": "Ok"
+   },
+   "pageTitle": {
+      "message": "مواقع شعبية"
+   },
+   "recent": {
+      "message": "آخر"
+   },
+   "recommended": {
+      "message": "موصى بها"
+   },
+   "searchButton": {
+      "message": "بحث"
+   },
+   "searchOptions": {
+      "message": "إعدادات البحث"
+   },
+   "select": {
+      "message": "تحديد"
+   },
+   "siteDuplicate": {
+      "message": "مدرج بالفعل في هذا الموقع"
+   },
+   "themesHeader": {
+      "message": "Orbitum خلفيات"
+   },
+   "themesLoading": {
+      "message": "يرجى الانتظار - تحمي ..."
+   },
+   "themesLoadingFailed": {
+      "message": "لا يمكن تحميل ثيمات"
+   },
+   "today": {
+      "message": "اليوم"
+   },
+   "upload": {
+      "message": "رفع"
+   },
+   "yesterday": {
+      "message": "أمس"
+   }
+}

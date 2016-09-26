@@ -1,0 +1,34 @@
+{
+   "author": "Avast",
+   "background": {
+      "scripts": [ "common/libs/q.js", "common/libs/eventemitter2.js", "common/libs/protobuf.js", "common/libs/lodash.js", "scripts/abek.bl.crx.js", "common/scripts/gpb.js", "common/scripts/query.js", "common/scripts/avastwrc.js", "common/scripts/bal.js", "scripts/aos.bl.js", "scripts/bs.crx.js", "scripts/bs.aos.crx.js" ]
+   },
+   "browser_action": {
+      "default_icon": "common/ui/icons/status-none.png",
+      "default_popup": "common/ui/aos.panel.html",
+      "default_title": "Avast Online Security"
+   },
+   "content_scripts": [ {
+      "js": [ "common/scripts/ava_connector.js" ],
+      "matches": [ "*://*.avast.com/*" ]
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "default_locale": "en",
+   "description": "Avast Browser Security and Web Reputation Plugin.",
+   "icons": {
+      "128": "common/skin/img/icon128.png",
+      "16": "common/skin/img/icon16.png",
+      "256": "common/skin/img/icon256.png",
+      "32": "common/skin/img/icon32.png",
+      "48": "common/skin/img/icon48.png",
+      "64": "common/skin/img/icon64.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDWStseB5KE8Vqukt6RkFc3NirSBRmBTKvNolNhsOo5Q/kUlJs1pajaMckUR5rJXlpzvxfvesfNlASR/QnHKdlGBxPlyi5dxN+nohCclJYf5dXVq2ndj2ykgd++rs1qD35tw3R2v5BaeTmLgP2G/Jd53BaJXDNTGIusbkGEhvZ2rQIDAQAB",
+   "manifest_version": 2,
+   "name": "Avast Online Security",
+   "options_page": "options.html",
+   "permissions": [ "cookies", "*://*.avast.com/*", "http://*/*", "https://*/*", "tabs", "webNavigation", "webRequest", "webRequestBlocking" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "11.1.0.955",
+   "web_accessible_resources": [ "common/skin/*", "common/skin/img/*", "common/skin/css/*", "common/mocks/*", "common/ui/icons/*", "common/ui/bgs/*" ]
+}

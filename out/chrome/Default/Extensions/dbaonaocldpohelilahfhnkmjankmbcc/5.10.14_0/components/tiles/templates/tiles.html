@@ -1,0 +1,35 @@
+<history-view data-ng-if="currentTab === 'recent'"></history-view>
+<ul
+    class="bookmarks-container"
+    data-ui-sortable="sortableOptions"
+    data-ng-model="tiles"
+    data-ng-if="tiles.length && currentTab !== 'recent'"
+>
+    <li class="bookmark" data-ng-repeat="tile in tiles track by $index" data-ng-class="{'not-sortable': tile.locked}" in-tile-history>
+        <div class="bookmark-inner">
+            <preloader data-ng-if="tile.loading"></preloader>
+            <a href="{{tile.url}}" data-ng-click="tileClick($index)" data-ng-if="!tile.loading">
+                <img ng-if="tile.image" ng-src="{{tile.image}}" default-src="resources/no_internet.png" />
+                <tile-preview data-ng-if="!tile.image"></tile-preview>
+            </a>
+        </div>
+        <div title="{{translate.editWebsite}}" data-ng-click="edit($index)" class="chn_btn" data-ng-if="!tile.loading && !tile.locked"></div>
+        <div title="{{translate.historyWidget}}" class="his_btn inTileHistoryTrigger" data-ng-if="!tile.loading && !tile.locked"></div>
+        <div title="{{translate.deleteWebsite}}" data-ng-click="remove(tile)" class="del_btn" data-ng-if="!tile.loading && !tile.locked"></div>
+
+        <div class="socialBlock">
+            <div class="widget" ng-if="tile.widget" color-bg>
+                <div>
+                    <a class="siteName" title="{{::tile.title}}" href="{{::tile.url}}"><img style="width:16px; height:16px;" ng-src="chrome://favicon/size/8@1x/{{::tile.url}}"> {{::tile.title}}</a>
+                </div>
+                <div class="widget-item" ng-repeat="item in tile.widget.items">
+                    <a href="{{::item.url}}" title="{{::item.title}}">{{::item.title}}</a>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+<ul class="bookmarks-container" data-ng-if="!firstRunLoading && !tiles.length && currentTab !== 'recent'">
+    <div class="invite-to-add">{{noTilesText}}</div>
+    <div class="invite-arrow" data-ng-if="addSiteArrowVisible"></div>
+</ul>

@@ -1,0 +1,9 @@
+<div class="tile-preview" style="height:100%;background:{{tile.preview.colorSet.color}};color:{{tile.preview.colorSet.textColor || '#fdfdfd'}}">
+    <div class="favicon-container">
+        <img width="16" height="16" data-ng-src="{{tile.preview.favicon}}" />
+    </div>
+    <div class="site-text">
+        <div class="site-title" title="{{tile.title}}" data-ng-bind-html="tile.title | trimLink | unsafe"></div>
+        <div class="site-description" title="{{tile.url}}" data-ng-bind-html="tile.url | unpunycode | trimLink | unsafe"></div>
+    </div>
+</div>

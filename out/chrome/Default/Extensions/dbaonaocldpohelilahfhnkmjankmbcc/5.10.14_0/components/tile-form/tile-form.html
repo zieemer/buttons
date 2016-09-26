@@ -1,0 +1,42 @@
+<div class="overlay" data-ng-show="showForm">
+    <div
+        data-ng-show="showForm"
+        id="form-itself"
+        class="popup-container add-site-container"
+        data-click-outside="closeThis()"
+        data-outside-if-not="form-itself,add-button">
+        <div class="close-popup" data-ng-click="$broadcast('hideFormsAndPopups')"></div>
+        <p class="popup-title">{{formTitle}}</p>
+        <form
+            class="siteNameInput"
+            data-ng-submit="save(tile)"
+        >
+            <input
+                id="userurl"
+                class="add-site-input"
+                data-ng-model="tile.url"
+                placeholder="{{::urlPlaceholder}}" required
+                data-focus="showForm"
+            >
+            <ul id="AddSiteSugest"></ul>
+            <input
+                id="usertitle"
+                class="add-site-input"
+                data-ng-model="tile.title"
+                placeholder="{{::titlePlaceholder}}"
+            />
+            <button
+                type="submit"
+                value="{{submitButton}}"
+                id="saveurl"
+            >
+                {{submitButton}}
+            </button>
+        </form>
+
+        <tiles-by-categories
+            data-edit-mode="{{editMode}}"
+            data-edit-index="{{index}}"
+        ></tiles-by-categories>
+    </div>
+</div>

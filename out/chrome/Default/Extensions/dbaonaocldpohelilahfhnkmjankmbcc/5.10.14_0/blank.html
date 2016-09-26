@@ -1,0 +1,40 @@
+<!doctype html>
+<html data-ng-app="mainModule" data-ng-controller="MainController">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title data-ng-bind="pageTitle"></title>
+
+    <link rel="shortcut icon" href="/resources/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="layout/css/normalize.min.css">
+    <link rel="stylesheet" href="layout/css/main.css">
+
+    <script type="text/javascript" src="/public/bundle.js"></script>
+
+</head>
+
+<body data-ng-keyup="keyup($event)" data-ng-cloak>
+<div class="all-background" data-background-image></div>
+<div class="container" data-ng-click="clickBody($event)" data-hide-popup>
+    <div class="content" data-color-font data-ng-controller="TilesController">
+        <div class="bottom-blur-container">
+            <div class="blur-bg"></div>
+            <div class="blur-overlay" data-color-bg></div>
+        </div>
+        <search></search>
+        <tabs></tabs>
+        <tiles></tiles>
+        <div class="bottom-container">
+            <sync-progress></sync-progress>
+            <tiles-add-button></tiles-add-button>
+        </div>
+        <tile-form></tile-form>
+    </div>
+    <settings-main></settings-main>
+    <themes-catalog></themes-catalog>
+</div>
+</body>
+</html>
